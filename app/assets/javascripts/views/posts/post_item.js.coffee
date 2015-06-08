@@ -1,7 +1,7 @@
 class MicroBlog.Views.PostItem extends Backbone.View
   tagName: "li"
   template: JST['posts/post_item']
-  className: 'post-item'
+  className: 'post-item cf'
   render: ->
     #@model.tags.forEach((tag)->
     #  console.log(tag)
@@ -10,7 +10,7 @@ class MicroBlog.Views.PostItem extends Backbone.View
     @renderTags(@model)
     post_item_link = $('<a>', {
                        href: "/#/posts/#{@model.get('id')}"
-                       class: "btn"
+                       class: "btn move-right"
                      }).text('View Post')
     @$el.append(post_item_link)
     post_item_link.wrap('<p>')

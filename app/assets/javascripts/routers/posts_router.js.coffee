@@ -7,6 +7,7 @@ class MicroBlog.Routers.Posts extends Backbone.Router
     Backbone.history.start(
       pushState: true
       )
+  initialize: ->
   index: (tag_id) ->
     if typeof tag_id == 'undefined'
       @posts = new MicroBlog.Collections.Posts()

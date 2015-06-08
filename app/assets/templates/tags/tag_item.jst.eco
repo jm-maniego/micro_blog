@@ -1,0 +1,1 @@
+<a href="#tags/<%= @tag.get('id') %>/posts"><%= @tag.get('name') %></a> 

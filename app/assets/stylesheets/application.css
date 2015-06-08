@@ -1,0 +1,103 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+@import 'normalize';
+
+html, body {
+  min-height: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #EDEDED;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAWSjEh8SSD7OUwAzAFJggTgHJAAAEkuAx5OdRJCAAAAAElFTkSuQmCC");
+}
+ ul {
+  list-style: none;
+ }
+
+ li.inline {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .btn {
+    border-right: 1px #6BDBBD solid ;
+    border-bottom: 2px #6BDBBD solid ;
+    padding: 9px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 2px;
+    background-color: #A1F6DF;
+    color: rgba(40,40,40,.8);
+  }
+
+  #tag_name {
+    color: gray;
+    opacity: 0.567;
+  }
+
+  #header-main {
+    background-color: #434242;
+    padding: 20px;
+    height: 65%;
+    position: relative;
+    margin-bottom: 70px;
+    border-bottom: 5px #AEAEAE solid;
+  }
+
+  #header-main a {
+    color: white;
+  }
+
+  #page-title {
+    font-size: 4em;
+  }
+
+  .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #content {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 70px;
+    padding: 20px;
+  }
+
+  #content ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .post-item {
+    background-color: #FFF;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px rgba(67, 66, 66, 0.24) solid;
+    border-right: 1px rgba(67, 66, 66, 0.24) solid;
+    border-top: 1px rgba(67, 66, 66, 0.08) solid ;
+    border-left: 1px rgba(67, 66, 66, 0.08) solid ;
+    box-shadow: 2px 2px 2px 2px rgba(200, 200, 200, 0.2);
+    border-radius: 3px;
+    word-wrap: break-word;
+  }
